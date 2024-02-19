@@ -19,14 +19,14 @@ export function NavBar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5 text-primary font-thin text-4xl">
+          <a href="#" className="-m-1.5 p-1.5 text-primary font-thin text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             DIGIT<span className="font-medium">AL</span> DOM<span className="font-medium">AIN</span>
           </a>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -38,16 +38,11 @@ export function NavBar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-lg font-semibold leading-6 text-gray-900 dark:text-white"
+              className="text-lg font-semibold leading-6 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
             >
               {item.name}
             </a>
           ))}
-        </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
         </div>
       </nav>
       <Dialog
@@ -57,9 +52,9 @@ export function NavBar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/bg-slate-800 bg-slate-800/30  backdrop-blur-md transition ease-in-out delay-1050 duration-300">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5 text-green font-thin text-4xl">
+            <a href="#" className="-m-1.5 p-1.5 text-green font-thin text-4xl text-primary">
             DIGIT<span className="font-medium">AL</span> DOM<span className="font-medium">AIN</span>
           </a>
             <button
@@ -68,29 +63,21 @@ export function NavBar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+          <div className="mt-6 flow-root flex">
+            <div className="my-17 divide-y divide-gray-500/10 items-center grow">
+              <div className="space-y-2 py-6 flex flex-col">
                 {navigation.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-4 text-3xl font-semibold leading-9 hover:bg-fuchsia-500 text-white text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-200"
                   >
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
