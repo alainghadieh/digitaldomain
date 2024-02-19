@@ -38,6 +38,7 @@ export function NavBar() {
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <Link
+              key={item.name}
               to={item.href}
               className="text-lg font-semibold leading-6 font-display text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
             >
@@ -67,7 +68,7 @@ export function NavBar() {
               <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root flex">
+          <div className="mt-6">
             <div className="my-17 divide-y divide-gray-500/10 items-center grow">
               <div className="space-y-2 py-6 flex flex-col">
                 {navigation.map((item) => (

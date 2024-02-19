@@ -55,6 +55,7 @@ export function Resume() {
       </div>
       {WorkExperience.map((x) => (
         <WorkCard
+          key={x.position}
           date={x.date}
           company={x.company}
           position={x.position}
@@ -69,6 +70,7 @@ export function Resume() {
       </div>
       {AcademicExperience.map((x) => (
         <WorkCard
+          key={x.description}
           date={x.date}
           company={x.company}
           position={x.position}

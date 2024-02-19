@@ -8,7 +8,7 @@ export function WorkCard(props) {
         </span>
         <p
           className="px-3 py-1 font-display text-sm font-bold text-gray-100 transition-colors duration-300 transform bg-gray-600 rounded hover:bg-gray-500"
-          tabindex="0"
+          tabIndex="0"
         >
           {company}
         </p>
@@ -17,7 +17,7 @@ export function WorkCard(props) {
       <div className="mt-1">
         <p
           className="text-xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 pb-1"
-          tabindex="0"
+          tabIndex="1"
           role="link"
         >
           {position}

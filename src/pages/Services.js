@@ -69,7 +69,7 @@ export function Services() {
       </div>
       <div className="inline-grid lg:grid-cols-3 grid-cols-2 gap-4 mb-8">
         {ProfessionalServices.map((x) => (
-          <SkillCard name={x.name} svg={x.svg} />
+          <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}
       </div>
       <div className="inline-flex items-center mb-6">
@@ -79,7 +79,7 @@ export function Services() {
       </div>
       <div className="flex flex-row gap-4 flex-start">
         {PlatformServices.map((x) => (
-          <SkillCard name={x.name} svg={x.svg} />
+          <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}
       </div>
     </>
