@@ -7,9 +7,8 @@ module.exports = {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       fontFamily: {
-        sans: ['"Big Shoulders Display"', 'sans-serif'],
-        // 'display': ['Oswald'],
-        // 'sans': ['"Plus Jakarta Sans"', 'sans-serif']
+        display: ['"Big Shoulders Display"', 'sans-serif'],
+        'sans': ['"Plus Jakarta Sans"', 'sans-serif']
       },
       textColor: {
         'primary': '#91d5c1',
