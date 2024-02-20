@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "HOME", href: "/" },
@@ -13,16 +14,21 @@ const navigation = [
 
 export function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const navLinkClasses =
+    "text-lg font-semibold leading-6 font-display transition-colors duration-300 hover:text-green";
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-sm backdrop-saturate-150 border-x border-b border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] max-w-screen-lg	mx-auto my-0">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5 text-primary font-display font-thin text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-            DIGIT<span className="font-medium">AL</span> DOM<span className="font-medium">AIN</span>
+          <a
+            href="/"
+            className="-m-1.5 p-1.5 text-primary font-display font-thin text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            DIGIT<span className="font-medium">AL</span> DOM
+            <span className="font-medium">AIN</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -37,13 +43,19 @@ export function NavBar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link
+            <NavLink
               key={item.name}
               to={item.href}
-              className="text-lg font-semibold leading-6 font-display text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-green underline underline-offset-8 " + navLinkClasses
+                  : "text-white " + navLinkClasses
+              }
             >
               {item.name}
-            </Link>
+            </NavLink>
           ))}
         </div>
       </nav>
@@ -56,9 +68,13 @@ export function NavBar() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/bg-slate-800 bg-slate-800/30  backdrop-blur-md transition ease-in-out delay-1050 duration-300">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5 font-display text-green font-thin text-4xl">
-            DIGIT<span className="font-medium">AL</span> DOM<span className="font-medium">AIN</span>
-          </a>
+            <a
+              href="/"
+              className="-m-1.5 p-1.5 font-display text-green font-thin text-4xl"
+            >
+              DIGIT<span className="font-medium">AL</span> DOM
+              <span className="font-medium">AIN</span>
+            </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
