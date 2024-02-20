@@ -1,4 +1,5 @@
-import BackgroundPolygon from "./BackgroundPolygon";
+import {BackgroundPolygon1} from "./BackgroundPolygon1";
+import {BackgroundPolygon2} from "./BackgroundPolygon2";
 import { NavBar } from "./NavBar";
 import { Footer } from "./Footer";
 import { Home } from "./pages/Home";
@@ -14,7 +15,7 @@ export default function App() {
     <>
       <NavBar></NavBar>
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <BackgroundPolygon isFirst="true" />
+        <BackgroundPolygon1 />
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48 ">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -22,7 +23,7 @@ export default function App() {
             <Route path="/website-design-and-seo-services" element={<Services />} />
           </Routes>
         </div>
-        <BackgroundPolygon isFirst="false" />
+        <BackgroundPolygon2 />
       </div>
       <Footer />
     </>
