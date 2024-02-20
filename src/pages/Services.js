@@ -57,7 +57,7 @@ const PlatformServices = [
 ];
 export function Services() {
   return (
-    <>
+    <div className="flex flex-col max-w-3xl">
       <h1 className="text-white text-4xl pb-8">
         I offer a wide range of services, including but not limited to the
         following
@@ -82,6 +82,6 @@ export function Services() {
           <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
