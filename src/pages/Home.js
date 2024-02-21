@@ -5,9 +5,8 @@ export function Home() {
   return (
     <>
       <div className="text-center">
-        <h1 className="font-display text-4xl font-bold tracking-tight text-white sm:text-6xl text-shadow-md">
-          Web Developer & SEO Specialist
-        </h1>
+
+        <h1 className="font-display text-4xl font-bold tracking-normal text-white sm:text-6xl text-shadow-md ">Web Developer & SEO Specialist</h1>
         <h2 className="mt-6 text-2xl leading-8 text-slate-200">
           State of the Art & Captivating Websites &#x2022; SEO Services <br />
         </h2>
@@ -29,7 +28,7 @@ export function Home() {
               CTA
             </a>
             <span className="flex absolute h-4 w-4 top-0 right-0 -mt-1 -mr-1">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-75"></span>
+              <span className="animate-ping-fast absolute inline-flex h-full w-full rounded-full bg-green opacity-75"></span>
               <span className="relative inline-flex rounded-full h-4 w-4 bg-green"></span>
             </span>
           </span>

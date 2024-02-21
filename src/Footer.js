@@ -1,16 +1,10 @@
+import { Logo } from "./Logo";
+
 export function Footer() {
   return (
     <footer className="bg-slate-800">
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
-          <a
-            href="/"
-            className="-m-1.5 p-1.5 text-primary font-display font-thin text-4xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-          >
-            DIGIT<span className="font-medium">AL</span> DOM
-            <span className="font-medium">AIN</span>
-          </a>
-
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             <div className="text-center">
               <h2 className="text-2xl font-semibold text-white">
@@ -29,8 +23,11 @@ export function Footer() {
         </div>
 
         <hr className="my-6 border-solid border-[#e5e7eb33] shadow-[1px_1px_20px_rgba(0,0,0,0.12)] max-w-screen-lg	mx-auto " />
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-center -mx-2">
+            <Logo />
+          </div>
+          <div className="my-6 flex flex-row justify-center -mx-2">
             <a
               href="https://www.linkedin.com/in/alain-ghadieh"
               className="mx-2 dark:text-gray-300  transition-colors duration-300 hover:text-green"

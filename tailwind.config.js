@@ -7,9 +7,12 @@ module.exports = {
     extend: {
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'ping-fast': 'ping 900ms cubic-bezier(0, 0, 0.2, 1) infinite',
       },
       fontFamily: {
-        display: ['"Big Shoulders Display"', 'sans-serif'],
+        display: ['"Futura Md BT"', 'sans-serif'],
+        link: ['"Futura"', 'sans-serif'],
+        logoPart1: ['"Futura Lt BT"', 'sans-serif'],
         'sans': ['"Cairo"', 'sans-serif']
       },
       textColor: {
