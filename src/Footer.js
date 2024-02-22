@@ -13,8 +13,9 @@ export function Footer() {
               <p className="max-w-md mx-auto mt-2 lowercase font-semibold text-2xl tracking-wider text-white">
                 Wait No More
               </p>
-              <div className="flex flex-col mt-6 sm:flex-row sm:items-center sm:justify-center">
-                <button className="w-full px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform hover:bg-indigo-500 focus-visible:outline-offset-2 rounded-md bg-indigo-600 focus-visible:outline-indigo-600 sm:mx-2 sm:order-2 sm:w-auto  focus:outline-none focus:ring focus:ring-green focus:ring-opacity-80">
+              <div className="flex flex-col mt-6 items-center justify-center">
+                <button className="w-32 px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform hover:bg-indigo-500 focus-visible:outline-offset-2 rounded-md bg-indigo-600 focus-visible:outline-indigo-600 sm:mx-2 sm:order-2 sm:w-auto  focus:outline-none focus:ring focus:ring-green focus:ring-opacity-80
+">
                   Get in touch
                 </button>
               </div>
@@ -30,7 +31,7 @@ export function Footer() {
           <div className="my-6 flex flex-row justify-center -mx-2">
             <a
               href="https://www.linkedin.com/in/alain-ghadieh"
-              className="mx-2 dark:text-gray-300  transition-colors duration-300 hover:text-green"
+              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-green"
               aria-label="LinkedIn"
             >
               <svg
@@ -47,7 +48,7 @@ export function Footer() {
 
             <a
               href="https://www.instagram.com/digitaldomainlb/"
-              className="mx-2 dark:text-gray-300  transition-colors duration-300 hover:text-green"
+              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-green"
               aria-label="Instagram"
             >
               <svg
