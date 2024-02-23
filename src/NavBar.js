@@ -15,7 +15,7 @@ const navigation = [
 export function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navLinkClasses =
-    "text-sm font-extrabold leading-6 font-display  tracking-[1px] transition-colors duration-300 hover:text-green tracking-[1px]";
+    " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-green ";
   return (
     <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-sm backdrop-saturate-150 border-x border-b border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] max-w-screen-lg	mx-auto my-0">
       <nav
@@ -48,7 +48,7 @@ export function NavBar() {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-green underline underline-offset-8 " + navLinkClasses
+                  ? "text-green underline underline-offset-[37px] decoration-[3px]" + navLinkClasses
                   : "text-white " + navLinkClasses
               }
             >

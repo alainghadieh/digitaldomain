@@ -1,0 +1,25 @@
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #91d5c1; }
+  }
+
+  /* The sliding underline effect for navlinks */
+  .link-container {
+    position: relative;
+  }
+
+  .link-container::after {
+    content: '';
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #91d5c1;
+    transition: width 0.3s ease;
+  }
+
+  .link-container:hover::after {
+    width: 100%;
+  }
