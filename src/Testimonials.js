@@ -3,10 +3,10 @@ export function Testimonials() {
     <section className="rounded-3xl backdrop-blur-lg backdrop-saturate-100 border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] border">
       <div className="container px-6 py-10 mx-auto ">
         <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-white ">
-          What my <span className="text-green ">clients</span> say
+          What my <span className="text-bermuda-300 ">clients</span> say
         </h1>
 
-        <p className="max-w-2xl mx-auto mt-6 text-center  text-gray-300">
+        <p className="max-w-2xl mx-auto mt-6 text-center  text-gray-300 hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
           ex placeat modi magni quia error alias, adipisci rem similique, at
           omnis eligendi optio eos harum.
@@ -26,7 +26,7 @@ export function Testimonials() {
               />
 
               <div className="mx-4">
-                <h1 className="font-semibold text-indigo-300">Dr Alexandra</h1>
+                <h1 className="font-semibold text-spindle-300">Dr Alexandra</h1>
                 <span className="text-sm text-gray-300">
                   Founder, Alexandra Ageless Glowing
                 </span>
@@ -46,7 +46,7 @@ export function Testimonials() {
               />
 
               <div className="mx-4">
-                <h1 className="font-semibold  text-indigo-300">Nadine</h1>
+                <h1 className="font-semibold  text-spindle-300">Nadine</h1>
                 <span className="text-sm text-gray-300">
                   Marketing Manager at Fab
                 </span>

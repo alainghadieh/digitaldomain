@@ -15,7 +15,7 @@ const navigation = [
 export function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navLinkClasses =
-    " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-green ";
+    " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-bermuda-300 ";
   return (
     <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-sm backdrop-saturate-150 border-x border-b border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] max-w-screen-lg	mx-auto my-0">
       <nav
@@ -48,7 +48,7 @@ export function NavBar() {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-green underline underline-offset-[37px] decoration-[3px]" + navLinkClasses
+                  ? "text-bermuda-300 underline underline-offset-[37px] decoration-[3px]" + navLinkClasses
                   : "text-white " + navLinkClasses
               }
             >
@@ -87,7 +87,7 @@ export function NavBar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-4 text-2xl font-extrabold  font-display  tracking-[1px] leading-9 hover:bg-fuchsia-500 text-white text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-200"
+                    className="-mx-3 block rounded-lg px-3 py-4 text-2xl font-extrabold  font-display  tracking-[1px] leading-9 hover:bg-gradient-to-b :hover:text-spindle-50 hover:bg-spindle-700 hover:border hover:border-spindle-700 focus-visible:outline-spindle-800 text-white text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-200"
                   >
                     {item.name}
                   </a>

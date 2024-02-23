@@ -14,7 +14,7 @@ export function Footer() {
                 Wait No More
               </p>
               <div className="flex flex-col mt-6 items-center justify-center">
-                <button className="w-32 px-5 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform hover:bg-indigo-500 focus-visible:outline-offset-2 rounded-md bg-indigo-600 focus-visible:outline-indigo-600 sm:mx-2 sm:order-2 sm:w-auto  focus:outline-none focus:ring focus:ring-green focus:ring-opacity-80
+                <button className="w-42 px-5 py-2  text-lg font-medium  text-white uppercase inline-flex items-center font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 focus-visible:outline-spindle-800 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80
 ">
                   Get in touch
                 </button>
@@ -31,7 +31,7 @@ export function Footer() {
           <div className="my-6 flex flex-row justify-center -mx-2">
             <a
               href="https://www.linkedin.com/in/alain-ghadieh"
-              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-green"
+              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-bermuda-300"
               aria-label="LinkedIn"
             >
               <svg
@@ -48,7 +48,7 @@ export function Footer() {
 
             <a
               href="https://www.instagram.com/digitaldomainlb/"
-              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-green"
+              className="mx-2 text-gray-300  transition-colors duration-300 hover:text-bermuda-300"
               aria-label="Instagram"
             >
               <svg
