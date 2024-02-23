@@ -25,7 +25,7 @@ export function useTypeWriter({ texts, delay, infinite }) {
       timeout2 = setTimeout(() => {
         setCurrentText((prevText) => prevText.slice(0, -1));
         setCurrentIndex((prevIndex) => prevIndex - 1);
-      }, delay);
+      }, delay*1.42);
     }
 
     // Check if the current text array is complete and move to the next one
