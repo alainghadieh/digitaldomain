@@ -36,7 +36,7 @@ export function NavBar() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-8 w-8" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -68,6 +68,7 @@ export function NavBar() {
           <div className="flex items-center justify-between">
           <a
             href="/"
+            className="pl-[1px]"
           >
             <Logo />
           </a>
@@ -77,7 +78,7 @@ export function NavBar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              <XMarkIcon className="h-8 w-8 text-white" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6">

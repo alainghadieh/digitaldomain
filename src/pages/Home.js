@@ -22,7 +22,7 @@ export function Home() {
             <a
               href="#"
               type="button"
-              className="inline-flex items-center px-5 py-3 font-display font-semibold leading-6 text-2xl shadow  text-white focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 focus-visible:outline-spindle-700 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80"
+              className="inline-flex items-center px-5 py-3 font-display font-semibold leading-6 text-xl shadow  text-white focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 focus-visible:outline-spindle-700 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80"
             >
               submit project
             </a>

@@ -16,7 +16,7 @@ export default function App() {
       <NavBar></NavBar>
       <div className="relative isolate px-6 pt-14 lg:px-8 flex justify-center">
         <BackgroundPolygon1 />
-        <div className="mx-auto max-w-screen-lg lg:py-32 sm:py-48 ">
+        <div className="mx-auto max-w-screen-lg lg:py-28 sm:py-6 ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />

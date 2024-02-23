@@ -14,7 +14,7 @@ export function Footer() {
                 Wait No More
               </p>
               <div className="flex flex-col mt-6 items-center justify-center">
-                <button className="w-42 px-5 py-2  text-lg font-medium  text-white uppercase inline-flex items-center font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 focus-visible:outline-spindle-800 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80
+                <button className="w-42 px-6 py-3  text-lg font-medium  text-white uppercase inline-flex items-center font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 focus-visible:outline-spindle-800 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80
 ">
                   Get in touch
                 </button>
