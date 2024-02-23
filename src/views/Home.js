@@ -1,24 +1,27 @@
 import { Testimonials } from "../components/Testimonials";
 import { useTypeWriter } from "../hooks/useTypeWriter";
-import React from 'react';
+import React from "react";
 export function Home() {
-  const message = useTypeWriter({texts:["Hi, I am Alain.", "I am Creative.", "I Love Design." ], delay:210, infinite:true})
+  const message = useTypeWriter({
+    texts: ["E-commerce", "Fintech", "Telecom", "Retail"],
+    delay: 210,
+    infinite: true,
+  });
   return (
     <>
       <div className="text-center">
-        <h1 className="font-display text-4xl font-bold tracking-normal text-white sm:text-6xl text-shadow-md ">Web Developer & SEO Specialist</h1>
-        <h1 className="font-display text-4xl font-bold tracking-normal text-white sm:text-6xl text-shadow-md ">   {message}
-      </h1>
-        <h2 className="mt-6 text-2xl leading-8 text-slate-200">
-          State of the Art & Captivating Websites &#x2022; SEO Services <br />
+        <h1 className="font-display text-4xl font-bold tracking-normal pb-4 text-white sm:text-6xl text-shadow-md ">
+          Web & Mobile App Development
+        </h1>
+        <h2 className="font-display text-xl font-bold tracking-normal text-white sm:text-xl text-shadow-md ">
+          State of the Art, Captivating Websites &#x2022; SEO Services
         </h2>
-        <h4 className="text-slate-200 text-lg">
-          Freelance Web Developer Based in Lebanon
-        </h4>
-        <p className="text-lg text-left leading-8 text-slate-200">
-          Welcome I will work directly with you to determine the best course of
-          action for your project, ensuring that your website is delivered on
-          time and on budget.
+        <h2 className="mt-6 text-2xl leading-8 text-spindle-100">
+          Your go-to Digital Transformation for: {message} <br />
+        </h2>
+        <h4 className="text-spindle-200 text-lg"></h4>
+        <p className="text-lg mt-3 text-center capitalize leading-8 text-spindle-100">
+          Hi, I'm Alain a Freelance Software & Web Developer Based in Lebanon
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <span className="relative inline-flex">
@@ -36,7 +39,7 @@ export function Home() {
           </span>
           <a
             href="/website-design-and-seo-services"
-            className="font-display text-xl font-semibold leading-6 text-white transition-colors duration-300 hover:text-bermuda-300 tracking-wider"
+            className="font-display lg:text-xl sm:text-lg font-semibold leading-6 text-white transition-colors duration-300 hover:text-bermuda-300 tracking-wider"
           >
             Services <span aria-hidden="true">→</span>
           </a>

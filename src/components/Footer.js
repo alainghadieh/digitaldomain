@@ -4,15 +4,15 @@ export function Footer() {
   return (
     <footer className="bg-slate-800">
       <div className="container px-6 py-8 mx-auto">
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center pb-12">
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold text-white">
+            <div className="text-center max-w-md ">
+              <p className="text-2xl font-semibold text-white">
                 Let’s get you started on something great
-              </h2>
-              <p className="max-w-md mx-auto mt-2 lowercase font-semibold text-2xl tracking-wider text-white">
-                Wait No More
               </p>
+              <small className="mt-8  font-semibold text-lg tracking-wide text-spindle-100">
+              Together, we'll ensure your project is delivered promptly and within budget.              
+              </small>
               <div className="flex flex-col mt-6 items-center justify-center">
                 <button className="w-42 px-6 py-3  text-lg font-medium  text-white uppercase inline-flex items-center font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 focus-visible:outline-spindle-800 transition ease-in-out duration-150 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80
 ">
