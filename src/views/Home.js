@@ -1,12 +1,14 @@
 import { Testimonials } from "../components/Testimonials";
-
+import { useTypeWriter } from "../hooks/useTypeWriter";
 import React from 'react';
 export function Home() {
-
+  const message = useTypeWriter({texts:["Hi, I am Alain.", "I am Creative.", "I Love Design." ], delay:210, infinite:true})
   return (
     <>
       <div className="text-center">
         <h1 className="font-display text-4xl font-bold tracking-normal text-white sm:text-6xl text-shadow-md ">Web Developer & SEO Specialist</h1>
+        <h1 className="font-display text-4xl font-bold tracking-normal text-white sm:text-6xl text-shadow-md ">   {message}
+      </h1>
         <h2 className="mt-6 text-2xl leading-8 text-slate-200">
           State of the Art & Captivating Websites &#x2022; SEO Services <br />
         </h2>
