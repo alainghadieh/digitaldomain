@@ -1,4 +1,4 @@
-import { SkillCard } from "../SkillCard";
+import { SkillCard } from "../components/SkillCard";
 import {
   Square3Stack3DIcon,
   SquaresPlusIcon,

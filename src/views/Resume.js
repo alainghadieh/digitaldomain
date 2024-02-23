@@ -1,12 +1,12 @@
-import { WorkCard } from "../WorkCard";
+import { ResumeCard } from "../components/ResumeCard";
 import { AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
 const WorkExperience = [
   {
-    date: "2021 - Present",
-    company: "Scopic, USA (Remote)",
-    description: "A software development and digital marketing company",
-    position: "Intermediate Web Developer",
-    experience: `
+    dateRange: "2021 - Present",
+    institution: "Scopic, USA (Remote)",
+    detail: "A software development and digital marketing company",
+    title: "Intermediate Web Developer",
+    description: `
           Worked using .Net Framework 4, .Net Core 3.1, Angular, Umbraco CMS
           framework 
         
@@ -17,11 +17,11 @@ const WorkExperience = [
       `,
   },
   {
-    date: "2020 - 2021",
-    company: "i-magineworks, Hazmieh LB",
-    description: "A digital consulting & creative services company",
-    position: "Back-End Developer",
-    experience: `      
+    dateRange: "2020 - 2021",
+    institution: "i-magineworks, Hazmieh LB",
+    detail: "A digital consulting & creative services company",
+    title: "Back-End Developer",
+    description: `      
       Worked using .Net Framework 4.8, .Net Core 3.1, C#, SQL server
       
         Helped build and maintain API used for mobile advertising includes CMS
@@ -31,18 +31,18 @@ const WorkExperience = [
 ];
 const AcademicExperience = [
   {
-    date: "2024 - Present",
-    company: "NDU, Louaize LB",
-    description: "Masters",
-    position: "Computer Science",
-    experience: ``,
+    dateRange: "2024 - Present",
+    institution: "NDU, Louaize LB",
+    detail: "Masters",
+    title: "Computer Science",
+    description: ``,
   },
   {
-    date: "2018 - 2021",
-    company: "NDU, Louaize LB",
-    description: "Undergraduate",
-    position: "Computer Science",
-    experience: ``,
+    dateRange: "2018 - 2021",
+    institution: "NDU, Louaize LB",
+    detail: "Undergraduate",
+    title: "Computer Science",
+    description: ``,
   },
 ];
 export function Resume() {
@@ -54,13 +54,13 @@ export function Resume() {
         <h1 className="text-white">Corporate Experience</h1>
       </div>
       {WorkExperience.map((x) => (
-        <WorkCard
-          key={x.position}
-          date={x.date}
-          company={x.company}
-          position={x.position}
+        <ResumeCard
+          key={x.title}
+          dateRange={x.dateRange}
+          institution={x.institution}
+          title={x.title}
+          detail={x.detail}
           description={x.description}
-          experience={x.experience}
         />
       ))}
       <div className="inline-flex items-center mb-6">
@@ -69,13 +69,13 @@ export function Resume() {
         <h1 className="text-white">Academic Experience</h1>
       </div>
       {AcademicExperience.map((x) => (
-        <WorkCard
-          key={x.description}
-          date={x.date}
-          company={x.company}
-          position={x.position}
+        <ResumeCard
+          key={x.detail}
+          dateRange={x.dateRange}
+          institution={x.institution}
+          title={x.title}
+          detail={x.detail}
           description={x.description}
-          experience={x.experience}
         />
       ))}
     </>

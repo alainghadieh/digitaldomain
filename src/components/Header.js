@@ -12,7 +12,7 @@ const navigation = [
   { name: "CONTACT", href: "#" },
 ];
 
-export function NavBar() {
+export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navLinkClasses =
     " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-bermuda-300 ";
