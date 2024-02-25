@@ -58,14 +58,11 @@ const PlatformServices = [
 export function Services() {
   return (
     <div className="flex flex-col max-w-3xl">
-      <h1 className="text-white text-4xl pb-8">
-        I offer a wide range of services, including but not limited to the
-        following
-      </h1>
+      <h2>I offer a wide range of services, including but not limited to the following</h2>
       <div className="inline-flex items-center mb-6">
-        <SquaresPlusIcon className="h-8 w-8 text-white" aria-hidden="true" />
+        <SquaresPlusIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
-        <h1 className="text-white">Professional Services</h1>
+        <h3>Professional Services</h3>
       </div>
       <div className="inline-grid lg:grid-cols-3 grid-cols-2 gap-4 mb-8">
         {ProfessionalServices.map((x) => (
@@ -73,11 +70,11 @@ export function Services() {
         ))}
       </div>
       <div className="inline-flex items-center mb-6">
-        <Square3Stack3DIcon className="h-8 w-8 text-white" aria-hidden="true" />
+        <Square3Stack3DIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
-        <h1 className="text-white">Platform Services</h1>
+        <h3>Platform Services</h3>
       </div>
-      <div className="flex flex-row gap-4 flex-start">
+      <div className="flex flex-row gap-4">
         {PlatformServices.map((x) => (
           <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}

@@ -18,11 +18,11 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="rounded-3xl backdrop-blur-lg backdrop-saturate-100 border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] border">
-      <div className="container px-6 py-10 mx-auto ">
-        <h1 className="text-2xl font-semibold text-center capitalize lg:text-3xl text-white ">
+    <section className="card">
+      <div className="container px-6 py-10 mx-auto">
+        <h2 className="text-center">
           What my <span className="text-bermuda-300 ">clients</span> say
-        </h1>
+        </h2>
 
         <p className="max-w-2xl mx-auto mt-6 text-center  text-gray-300 hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt

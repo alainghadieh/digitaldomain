@@ -8,7 +8,7 @@ const navigation = [
   { name: "HOME", href: "/" },
   { name: "SERVICES", href: "/website-design-and-seo-services" },
   { name: "RESUME", href: "/resume" },
-  { name: "PROJECTS", href: "" },
+  { name: "PROJECTS", href: "/projects" },
   { name: "CONTACT", href: "#" },
 ];
 
@@ -17,9 +17,9 @@ export function Header() {
   const navLinkClasses =
     " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-bermuda-300 ";
   return (
-    <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-sm backdrop-saturate-150 border-x border-b border-solid	border-[#e5e7eb33]	shadow-[1px_1px_20px_rgba(0,0,0,0.12)] max-w-screen-lg	mx-auto my-0">
+    <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-lg backdrop-saturate-100 drop-shadow-lg bg-spindle-200/10 border-x border-b border-spindle-400/20 max-w-screen-lg	mx-auto my-0">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-5 lg:py-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -64,7 +64,7 @@ export function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/bg-slate-800 bg-slate-800/30  backdrop-blur-md transition ease-in-out delay-1050 duration-300">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-5 py-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/bg-slate-800 bg-slate-800/30  backdrop-blur-md transition ease-in-out delay-1050 duration-300">
           <div className="flex items-center justify-between">
           <a
             href="/"
