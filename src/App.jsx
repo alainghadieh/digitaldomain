@@ -4,6 +4,7 @@ import { Home } from "./views/Home";
 import { Services } from "./views/Services";
 import { Resume } from "./views/Resume";
 import { Portfolio } from "./views/Portfolio";
+import { Contact } from "./views/Contact";
 import { BackgroundPolygon1 } from "components/BackgroundPolygon1";
 import { BackgroundPolygon2 } from "components/BackgroundPolygon2";
 import { Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ export default function App() {
               element={<Services />}
             />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <BackgroundPolygon2 />

@@ -1,12 +1,17 @@
 import { InstagramIcon } from "./InstagramIcon";
 import { LinkedInIcon } from "./LinkedInIcon";
 import { Logo } from "./Logo";
+import { useLocation } from "react-router";
 
 export function Footer() {
+  const location = useLocation();
+  const shouldHideSection = location.pathname === '/contact';
+  const sectionClasses = `flex flex-col items-center text-center ${shouldHideSection ? 'hidden' : ''}`;
+
   return (
     <footer className="bg-spindle-900">
       <div className="px-6 py-8 mx-auto">
-        <div className="flex flex-col items-center text-center ">
+        <div className={sectionClasses}>
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             <div className="text-center max-w-md rounded-3xl p-6 border border-spindle-400/20 drop-shadow-lg">
               <h4 className="font-semibold capitalize">
@@ -16,7 +21,7 @@ export function Footer() {
                 Together, we'll ensure your project is delivered promptly and within budget.
               </p>
               <div className="flex flex-col mt-6 items-center justify-center">
-                <button className="btn-primary">Get in touch</button>
+                <a href="/contact" className="btn-primary">Get in touch</a>
               </div>
             </div>
           </div>
