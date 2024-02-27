@@ -3,14 +3,14 @@ const testimonials = [
   {
     reviewerName: "Dr Alexandra",
     jobTitle: "Founder, Alexandra Ageless Glowing",
-    avatar: './dralexandra_avatar.jpeg',
+    avatar: "./dralexandra_avatar.jpeg",
     alt: `Dr Alexandra's avatar`,
     review: `“Working with Alain was fantastic! His expertise and attention to detail resulted in a stunning skincare ecommerce site. Communication was seamless, and he kept me updated throughout. Highly recommend for anyone seeking top-notch web development!”`,
   },
   {
     reviewerName: "Nadine",
     jobTitle: "Marketing Manager at Fab",
-    avatar: './nadine_avatar.jpeg',
+    avatar: "./nadine_avatar.jpeg",
     alt: `Nadine's avatar`,
     review: `“Alain transformed our clothing store's online presence! Their design skills captured our brand perfectly. Communication was excellent, and they delivered on time. Our website is now a seamless shopping experience thanks to their expertise!”`,
   },
@@ -30,11 +30,25 @@ export function Testimonials() {
           omnis eligendi optio eos harum.
         </p>
 
-        <div className="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl ">
+        <swiper-container
+          style={{ "--swiper-pagination-color": "#91d5c1" }}
+          pagination="true"
+          slides-per-view="1"
+          css-mode="true"
+          mousewheel-force-to-axis="true"
+        >
           {testimonials.map((x) => (
-            <Testimonial key={x.reviewerName} reviewerName={x.reviewerName} jobTitle={x.jobTitle} avatar={x.avatar} alt={x.alt} review={x.review} />
-          ))}        
-        </div>
+            <swiper-slide className="w-2" key={x.reviewerName}>
+              <Testimonial
+                reviewerName={x.reviewerName}
+                jobTitle={x.jobTitle}
+                avatar={x.avatar}
+                alt={x.alt}
+                review={x.review}
+              />
+            </swiper-slide>
+          ))}
+        </swiper-container>
       </div>
     </section>
   );

@@ -43,14 +43,14 @@
     
     /* The sliding underline effect for navlinks */
     .link-container {
-      @apply relative after:content-[''] after:absolute after:w-0 after:h-[3px] after:bg-[#91d5c1] after:transition-[width] after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-[54px] hover:after:w-full;
+      @apply relative after:content-[''] after:absolute after:w-0 after:h-[3px] after:bg-bermuda-300 after:transition-[width] after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-[54px] hover:after:w-full;
     }
     
     .typewriter {
       @apply whitespace-nowrap animate-[typing_3.5s_steps(40,end),blink-caret_0.75s_step-end_infinite] mx-auto my-0 border-r-[0.05em] border-r-bermuda-300 border-solid;
     }
     .cta-btn {
-      @apply px-5 py-3 font-display font-semibold leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80  animate-pulse-slow uppercase;
+      @apply px-5 py-3 font-display font-semibold leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80  animate-pulse-slow hover:animate-none uppercase;
     }
     .btn-primary {
       @apply w-48 px-6 py-3  text-lg font-medium  text-bermuda-50 uppercase font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 active:from-spindle-700 active:to-spindle-900 focus-visible:outline-spindle-800 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80 animate-pulse-slow hover:animate-none ease-in-out duration-200;
