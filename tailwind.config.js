@@ -9,6 +9,12 @@ module.exports = {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'ping-fast': 'ping 900ms cubic-bezier(0, 0, 0.2, 1) infinite',
       },
+      backgroundImage: theme => ({
+        'pulse-lg': "url('/public/portfolio/pulse-desktop.png')",
+        'pulse-sm': "url('/public/portfolio/pulse-mobile.png')",
+        'dralexandra-lg': "url('/public/portfolio/dralexandra-desktop.png')",
+        'dralexandra-sm': "url('/public/portfolio/dralexandra-mobile.png')",
+      }),
       fontFamily: {
         display: ['"Futura Md BT"', 'sans-serif'],
         link: ['"Futura"', 'sans-serif'],

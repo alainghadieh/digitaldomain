@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import { Home } from "./views/Home";
 import { Services } from "./views/Services";
 import { Resume } from "./views/Resume";
-import { Projects } from "./views/Projects";
+import { Portfolio } from "./views/Portfolio";
 import {
   Routes,
   Route,
@@ -22,7 +22,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/website-design-and-seo-services" element={<Services />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
         </div>
         <BackgroundPolygon2 />
