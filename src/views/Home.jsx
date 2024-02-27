@@ -21,8 +21,8 @@ export function Home() {
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <span className="relative">
-            <a href="#" type="button" className="cta-btn">
-              submit project
+            <a href="/contact" type="button" className="cta-btn">
+              reach out
             </a>
             <Ping />
           </span>

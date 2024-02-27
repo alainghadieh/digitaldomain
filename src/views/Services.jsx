@@ -59,7 +59,7 @@ export function Services() {
   return (
     <div className="flex flex-col max-w-3xl">
       <h2>I offer a wide range of services, including but not limited to the following</h2>
-      <div className="inline-flex items-center mb-6">
+      <div className="inline-flex items-center mb-6 mt-4">
         <SquaresPlusIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
         <h3>Professional Services</h3>

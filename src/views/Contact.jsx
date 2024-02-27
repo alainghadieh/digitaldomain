@@ -1,6 +1,11 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import {
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 
 const variants = {
   initial: {
@@ -28,17 +33,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.init({
-        publicKey: "XQVoSreOQaCfH9THp",
-      });
+      publicKey: "XQVoSreOQaCfH9THp",
+    });
     emailjs
-      .sendForm(
-        "service_ychowg3",
-        "template_1d8yixn",
-        formRef.current,
-      )
+      .sendForm("service_ychowg3", "template_1d8yixn", formRef.current)
       .then(
         (result) => {
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           setError(true);
@@ -49,34 +50,51 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="contact"
+      className="flex center lg:flex-row flex-col items-center gap-44"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
+      <motion.div className="flex items-center flex-col lg:text-left lg:items-start text-center" variants={variants}>
+        <motion.h1
+          className="lg:text-[100px] lg:leading-[88px] lg:text-left"
+          variants={variants}
+        >
+          Let’s work together
+        </motion.h1>
+        <motion.div className="contact-label" variants={variants}>
+          <h2>
+            <EnvelopeIcon className="h2-icon" aria-hidden="true" /> Mail
+          </h2>
           <p>info@digitaldomain.dev</p>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
+        <motion.div className="contact-label" variants={variants}>
+          <h2>
+            <MapPinIcon className="h2-icon" aria-hidden="true" /> Address
+          </h2>
           <p>Jounieh, Lebanon</p>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+        <motion.div className="contact-label" variants={variants}>
+          <h2>
+            <PhoneIcon className="h2-icon" aria-hidden="true" />
+            Phone
+          </h2>
           <p>+961 76 024 091</p>
         </motion.div>
       </motion.div>
-      <div className="formContainer">
+      <div className="lg:w-8/12 w-72">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="450px" height="450px" className="w-full" viewBox="0 0 32.666 32.666">
+          <svg
+            width="450px"
+            height="450px"
+            className="w-full"
+            viewBox="0 0 32.666 32.666"
+          >
             <motion.path
               strokeWidth={0.2}
               fill="none"
@@ -101,14 +119,15 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
+          className="flex flex-col gap-6"
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
           <button className="cta-btn">Submit</button>
           {error && "Error"}
           {success && "Success"}
@@ -118,4 +137,4 @@ const Contact = () => {
   );
 };
 
-export  {Contact};
+export { Contact };

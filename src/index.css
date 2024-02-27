@@ -7,82 +7,6 @@
   from { width: 0 }
   to { width: 100% }
 }
-.contact {
-  height: 100%;
-  max-width: 1366px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-@media (max-width: 738px) {
-  .contact {
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
- }
-}
-.contact .textContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-@media (max-width: 738px) {
-  .contact .textContainer {
-    gap: 20px;
-    text-align: center;
-    align-items: center;
-    margin-top: 70px;
- }
-}
-.contact .textContainer h1 {
-  font-size: 100px;
-  line-height: 88px;
-}
-@media (max-width: 738px) {
-  .contact .textContainer h1 {
-    font-size: 36px;
- }
-}
-.contact .textContainer span {
-  font-weight: 300;
-}
-.contact .formContainer {
-  flex: 1;
-  position: relative;
-}
-@media (max-width: 738px) {
-  .contact .formContainer {
-    padding: 50px;
-    width: 100%;
- }
-}
-.contact .formContainer .phoneSvg {
-  stroke: theme('colors.spindle.200');
-  position: absolute;
-  margin: auto;
-  z-index: -1;
-}
-.contact .formContainer form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.contact .formContainer form input, .contact .formContainer form textarea {
-  padding: 20px;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  border-radius: 5px;
-}
-@media (max-width: 738px) {
-  .contact .formContainer form input, .contact .formContainer form textarea {
-    padding: 10px;
- }
-}
-
-
 
 @media (max-width: 500px) {
   .swiper_container {
@@ -108,7 +32,7 @@
     @apply my-6 border-x border-b border-spindle-400/20 drop-shadow-lg max-w-screen-lg	mx-auto;
   }
   h1 {
-    @apply lg:text-6xl text-4xl font-display font-bold tracking-normal pb-4 text-spindle-50 text-shadow-md;
+    @apply lg:text-6xl text-5xl font-display font-bold tracking-normal pb-4 text-spindle-50 text-shadow-md;
   }
   h2 {
     @apply lg:text-4xl text-2xl font-display font-bold tracking-normal text-spindle-50 text-shadow-md capitalize;
@@ -125,6 +49,12 @@
   p {
     @apply text-lg leading-8 text-spindle-100;
   }
+  input, textarea{
+    @apply mt-1 block w-full px-3 py-4 bg-spindle-50/20 border border-spindle-300 rounded-3xl text-base text-spindle-50 shadow-sm placeholder-spindle-400
+      focus:outline-none focus:border-bermuda-300 focus:ring-1 focus:ring-bermuda-300
+      invalid:border-red-500 invalid:text-red-300
+      focus:invalid:border-red-500 focus:invalid:ring-red-500
+  }
 }
 @layer components {
     .card {
@@ -135,17 +65,28 @@
     .link-container {
       @apply relative after:content-[''] after:absolute after:w-0 after:h-[3px] after:bg-bermuda-300 after:transition-[width] after:duration-[0.3s] after:ease-[ease] after:left-0 after:top-[54px] hover:after:w-full;
     }
-    
+    .phoneSvg {
+      @apply stroke-spindle-200 absolute m-auto -z-10;
+    }
     .typewriter {
       @apply whitespace-nowrap animate-[typing_3.5s_steps(40,end),blink-caret_0.75s_step-end_infinite] mx-auto my-0 border-r-[0.05em] border-r-bermuda-300 border-solid;
     }
     .cta-btn {
-      @apply px-5 py-3 font-display font-semibold leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80  animate-pulse-slow hover:animate-none uppercase;
+      @apply px-5 py-3 font-display font-semibold leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80 uppercase;
     }
     .btn-primary {
-      @apply w-48 px-6 py-3  text-lg font-medium  text-bermuda-50 uppercase font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 active:from-spindle-700 active:to-spindle-900 focus-visible:outline-spindle-800 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80 animate-pulse-slow hover:animate-none ease-in-out duration-200;
+      @apply w-48 px-6 py-3  text-lg font-medium  text-bermuda-50 uppercase font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 active:from-spindle-700 active:to-spindle-900 focus-visible:outline-spindle-800 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80  ease-in-out duration-200;
     }
     .h2-icon {
       @apply h-8 w-8 text-spindle-50;
+    }
+    .contact-label {
+      @apply inline-flex lg:items-start items-center mb-6 mt-4 flex-col align-middle;
+    }
+    .contact-label h2 {
+      @apply flex gap-2 items-center;
+    }
+    .contact-label p {
+      @apply mt-2;
     }
   }
