@@ -51,7 +51,7 @@ export function Resume() {
       <div className="inline-flex items-center mb-6">
         <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
-        <h1 className="text-white">Corporate Experience</h1>
+        <h3>Corporate Experience</h3>
       </div>
       {WorkExperience.map((x) => (
         <ResumeCard
@@ -66,7 +66,7 @@ export function Resume() {
       <div className="inline-flex items-center mb-6">
         <AcademicCapIcon className="h-8 w-8 text-white" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
-        <h1 className="text-white">Academic Experience</h1>
+        <h3>Academic Experience</h3>
       </div>
       {AcademicExperience.map((x) => (
         <ResumeCard

@@ -8,13 +8,13 @@ export function Footer() {
       <div className="px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center ">
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
-            <div className="text-center max-w-md ">
-              <p className="text-2xl font-semibold text-white">
+            <div className="text-center max-w-md rounded-3xl p-6 border border-spindle-400/20 drop-shadow-lg">
+              <h4 className="font-semibold capitalize">
                 Let’s get you started on something great
-              </p>
-              <small className="mt-8  font-semibold text-lg  text-center tracking-wide text-spindle-100">
+              </h4>
+              <p className="mt-4 font-semibold tracking-wide text-spindle-100">
                 Together, we'll ensure your project is delivered promptly and within budget.
-              </small>
+              </p>
               <div className="flex flex-col mt-6 items-center justify-center">
                 <button className="btn-primary">Get in touch</button>
               </div>
