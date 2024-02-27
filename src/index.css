@@ -18,13 +18,13 @@
     @apply my-6 border-x border-b border-spindle-400/20 drop-shadow-lg max-w-screen-lg	mx-auto;
   }
   h1 {
-    @apply text-6xl font-display font-bold tracking-normal pb-4 text-spindle-50 text-shadow-md;
+    @apply lg:text-6xl text-4xl font-display font-bold tracking-normal pb-4 text-spindle-50 text-shadow-md;
   }
   h2 {
-    @apply text-4xl font-display font-bold tracking-normal text-spindle-50 text-shadow-md capitalize;
+    @apply lg:text-4xl text-2xl font-display font-bold tracking-normal text-spindle-50 text-shadow-md capitalize;
   }
   h3 {
-    @apply text-3xl font-display tracking-normal text-spindle-50 text-shadow-md capitalize;
+    @apply lg:text-3xl text-lg font-display tracking-normal text-spindle-50 text-shadow-md capitalize;
   }
   h4 {
     @apply text-2xl font-display tracking-normal text-spindle-50 text-shadow-md capitalize;
