@@ -1,12 +1,21 @@
 import { Testimonials } from "components/Testimonials";
 import { Ping } from "components/Ping";
+import { useTypeWriter } from "hooks/useTypeWriter";
 
 export function Home() {
+  const message = useTypeWriter({
+    texts: ["E-commerce", "Fintech", "Telecom", "Retail"],
+    delay: 210,
+    infinite: true,
+  });
   return (
     <>
       <div className="text-center">
         <h1>Web & Mobile App Development</h1>
         <h2>Beautiful, Captivating Websites &#x2022; SEO Services</h2>
+        <h4 className="mt-6">
+          Your go-to Digital Transformation for: {message} <br />
+        </h4>
         <p>
           Hi, I'm Alain a Freelance Software & Web Developer Based in Lebanon
         </p>
