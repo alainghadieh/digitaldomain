@@ -58,7 +58,7 @@
 }
 @layer components {
     .card {
-      @apply rounded-3xl backdrop-blur-lg backdrop-saturate-100 drop-shadow-lg bg-spindle-200/10 border border-solid border-spindle-400/20;
+      @apply rounded-3xl  drop-shadow-lg bg-spindle-200/10 border border-solid border-spindle-400/20;
     }
     
     /* The sliding underline effect for navlinks */
