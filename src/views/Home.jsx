@@ -16,7 +16,7 @@ export function Home() {
         <h4 className="mt-6">
           Your go-to Digital Transformation for: {message} <br />
         </h4>
-        <p>
+        <p className="hidden lg:block">
           Hi, I'm Alain a Freelance Software & Web Developer Based in Lebanon
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
