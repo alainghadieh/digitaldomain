@@ -13,9 +13,9 @@ export function Home() {
       <div className="text-center">
         <h1>Web & Mobile App Development</h1>
         <h2>Beautiful, Captivating Websites &#x2022; SEO Services</h2>
-        <h4 className="mt-6">
-          Your go-to Digital Transformation for: {message} <br />
-        </h4>
+        <h3 className="mt-6">
+          Your go-to Digital Transformation <br/>for {message} <br />
+        </h3>
         <p className="hidden lg:block">
           Hi, I'm Alain a Freelance Software & Web Developer Based in Lebanon
         </p>
@@ -28,9 +28,10 @@ export function Home() {
           </span>
           <a
             href="/website-design-and-seo-services"
-            className="font-display lg:text-xl sm:text-lg font-semibold leading-6 text-white transition-colors duration-300 hover:text-bermuda-300 tracking-wider"
+            className="btn-outline"
+            type="button"
           >
-            Services <span aria-hidden="true">→</span>
+            Services
           </a>
         </div>
       </div>

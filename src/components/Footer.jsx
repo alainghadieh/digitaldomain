@@ -21,7 +21,7 @@ export function Footer() {
                 Together, we'll ensure your project is delivered promptly and within budget.
               </p>
               <div className="flex flex-col mt-6 items-center justify-center">
-                <a href="/contact" className="btn-primary">Get in touch</a>
+                <a href="/contact" className="btn-primary animate-pulse-slow">Get in touch</a>
               </div>
             </div>
           </div>

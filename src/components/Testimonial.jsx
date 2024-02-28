@@ -10,7 +10,7 @@ export function Testimonial(props) {
           alt={alt}
         />
         <div className="mx-4">
-          <h6>{reviewerName}</h6>
+          <small>{reviewerName}</small><br />
           <span className="text-sm text-spindle-100">{jobTitle}</span>
         </div>
       </div>

@@ -43,8 +43,8 @@
   h4 {
     @apply text-2xl font-display tracking-normal text-spindle-50 text-shadow-md capitalize;
   }
-  h6 {
-    @apply text-lg font-semibold text-spindle-300 font-display;
+  small {
+    @apply text-base font-semibold text-spindle-300 font-display;
   }
   p {
     @apply text-lg leading-8 text-spindle-100;
@@ -72,10 +72,13 @@
       @apply whitespace-nowrap animate-[typing_3.5s_steps(40,end),blink-caret_0.75s_step-end_infinite] mx-auto my-0 border-r-[0.05em] border-r-bermuda-300 border-solid;
     }
     .cta-btn {
-      @apply px-5 py-3 font-display font-semibold leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80 uppercase;
+      @apply px-5 py-3 font-display font-semibold uppercase leading-6 text-xl shadow-2xl  text-bermuda-50 focus-visible:outline-offset-2 rounded-md bg-gradient-to-br from-spindle-400 to-spindle-600 hover:from-spindle-500 hover:to-spindle-700 active:from-spindle-600 active:to-spindle-800 focus-visible:outline-spindle-700 transition-colors duration-200 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80;
     }
     .btn-primary {
       @apply w-48 px-6 py-3  text-lg font-medium  text-bermuda-50 uppercase font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-gradient-to-bl from-spindle-500 to-spindle-700 hover:from-spindle-600 hover:to-spindle-800 active:from-spindle-700 active:to-spindle-900 focus-visible:outline-spindle-800 tracking-wider focus:outline-none focus:ring focus:ring-spindle-800 focus:ring-opacity-80  ease-in-out duration-200;
+    }
+    .btn-outline {
+      @apply px-5 py-3  text-xl font-medium  uppercase font-display  leading-6  shadow transform focus-visible:outline-offset-2 rounded-md bg-white/70 text-spindle-700 hover:bg-spindle-50 active:bg-spindle-100 focus-visible:outline-spindle-700 tracking-wider focus:outline-none focus:ring focus:ring-spindle-700 focus:ring-opacity-80  ease-in-out duration-200 border-spindle-700;
     }
     .h2-icon {
       @apply h-8 w-8 text-spindle-50;
