@@ -14,9 +14,9 @@ export function Footer() {
         <div className={sectionClasses}>
           <div className="flex flex-wrap justify-center mt-6 -mx-4">
             <div className="text-center max-w-md rounded-3xl p-6 border border-spindle-400/20 drop-shadow-lg">
-              <h4 className="font-semibold capitalize">
+              <p className="text-2xl font-display tracking-normal text-spindle-50 text-shadow-md capitalize">
                 Let’s get you started on something great
-              </h4>
+              </p>
               <p className="mt-4 font-semibold tracking-wide text-spindle-100">
                 Together, we'll ensure your project is delivered promptly and within budget.
               </p>
