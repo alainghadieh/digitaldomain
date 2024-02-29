@@ -47,7 +47,7 @@
     @apply text-base font-semibold text-spindle-300 font-display;
   }
   p {
-    @apply text-lg leading-8 text-spindle-100;
+    @apply text-base leading-8 text-spindle-100;
   }
   input, textarea{
     @apply mt-1 block w-full px-3 py-4 bg-spindle-50/20 border border-spindle-300 rounded-3xl text-base text-spindle-50 shadow-sm placeholder-spindle-400

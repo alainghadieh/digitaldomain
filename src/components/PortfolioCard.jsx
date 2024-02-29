@@ -1,3 +1,4 @@
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import {motion} from 'framer-motion'
 export function PortfolioCard(props) {
   const { name, detail, images, url } = props;
@@ -10,8 +11,12 @@ export function PortfolioCard(props) {
           {detail}
         </p>
         </div>
-          
-        <a href={url} target='_blank' className="btn-primary w-auto h-fit mx-0 my-auto animate-none">visit site</a>
+          <div className='flex flex-row'>
+
+        <a href={url} target='_blank' className="btn-primary w-auto h-fit mx-0 my-auto animate-none flex flex-row align-middle justify-between gap-2">visit site
+        <ArrowTopRightOnSquareIcon className="h-5 w-5"/>
+        </a>
+          </div>
       </motion.div>
     </div>
   );

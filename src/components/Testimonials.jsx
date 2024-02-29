@@ -1,4 +1,6 @@
 import { Testimonial } from "./Testimonial";
+import {Slider} from 'components/Slider'
+import { useState } from "react";
 const testimonials = [
   {
     reviewerName: "Dr Alexandra",
@@ -12,35 +14,44 @@ const testimonials = [
     jobTitle: "Marketing Manager at Fab",
     avatar: "./nadine_avatar.jpeg",
     alt: `Nadine's avatar`,
-    review: `“Alain transformed our clothing store's online presence! Their design skills captured our brand perfectly. Communication was excellent, and they delivered on time. Our website is now a seamless shopping experience thanks to their expertise!”`,
+    review: `“Alain transformed our clothing store's online presence! His design skills captured our brand perfectly. Communication was excellent, and he delivered on time. Our website is now a seamless shopping experience thanks to his expertise!”`,
   },
 ];
 
 export function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? testimonials.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === testimonials.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;    
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
   return (
     <section className="card">
-      <div className="container px-6 py-10 mx-auto">
+      <div className="container px-6 lg:py-10 py-6 mx-auto">
         <h2 className="text-center">
           What my <span className="text-bermuda-300 ">clients</span> say
         </h2>
 
-        <p className="max-w-2xl mx-auto mt-6 text-center  text-gray-300 hidden">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
-          ex placeat modi magni quia error alias, adipisci rem similique, at
-          omnis eligendi optio eos harum.
-        </p>
-
-        <div className="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl ">
-          {testimonials.map((x) => (
-            <Testimonial
-              key={x.reviewerName}
-              reviewerName={x.reviewerName}
-              jobTitle={x.jobTitle}
-              avatar={x.avatar}
-              alt={x.alt}
-              review={x.review}
-            />
-          ))}
+        <div className="max-w-[1400px] w-full m-auto lg:py-10 lg:px-4 py-4 relative group">
+          <Testimonial
+            reviewerName={testimonials[currentIndex].reviewerName}
+            jobTitle={testimonials[currentIndex].jobTitle}
+            avatar={testimonials[currentIndex].avatar}
+            alt={testimonials[currentIndex].alt}
+            review={testimonials[currentIndex].review}
+          />
+        <Slider currentIndex={currentIndex} prevSlide={prevSlide} nextSlide={nextSlide} goToSlide={goToSlide} elements={testimonials}/>
         </div>
       </div>
     </section>
