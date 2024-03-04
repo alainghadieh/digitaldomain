@@ -50,14 +50,17 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex center lg:flex-row flex-col items-center gap-44"
+      className="flex center lg:flex-row flex-col items-center lg:pt-20 lg:gap-44 max-w-screen-lg m-auto py-6"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="flex items-center flex-col lg:text-left lg:items-start text-center" variants={variants}>
+      <motion.div
+        className="flex items-center flex-col lg:text-left lg:items-start text-center z-10 "
+        variants={variants}
+      >
         <motion.h1
-          className="lg:text-[100px] lg:leading-[88px] lg:text-left"
+          className="lg:text-[100px] lg:text-left lg:leading-12"
           variants={variants}
         >
           Let’s work together
@@ -82,7 +85,7 @@ const Contact = () => {
           <p>+961 76 024 091</p>
         </motion.div>
       </motion.div>
-      <div className="lg:w-8/12 w-72">
+      <div className="lg:w-8/12 w-72 z-10 pb-20">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
@@ -128,7 +131,14 @@ const Contact = () => {
           <input type="text" required placeholder="Name" name="name" />
           <input type="email" required placeholder="Email" name="email" />
           <textarea rows={8} placeholder="Message" name="message" />
-          <button className="cta-btn">Submit</button>
+          <motion.button
+            className="cta-btn"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            Submit
+          </motion.button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>

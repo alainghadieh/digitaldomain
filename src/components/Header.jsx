@@ -16,7 +16,7 @@ export function Header() {
   const navLinkClasses =
     " px-[3px] link-container text-sm font-extrabold leading-6 font-display tracking-[1px] transition-colors duration-300 hover:text-bermuda-300 ";
   return (
-    <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-lg backdrop-saturate-100 drop-shadow-lg bg-spindle-200/10 border-x border-b border-spindle-400/20 max-w-screen-lg	mx-auto my-0">
+    <header className="inset-x-0 top-0 z-50 sticky rounded-bl-3xl rounded-br-3xl backdrop-blur-lg backdrop-saturate-100 drop-shadow-lg bg-spindle-300/20 border-x border-b border-spindle-400/20 max-w-screen-lg	mx-auto my-0">
       <nav
         className="flex items-center justify-between p-5 lg:py-6 lg:px-8"
         aria-label="Global"

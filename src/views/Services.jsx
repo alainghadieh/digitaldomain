@@ -1,4 +1,5 @@
 import { SkillCard } from "../components/SkillCard";
+import { Footer } from "components/Footer";
 import {
   Square3Stack3DIcon,
   SquaresPlusIcon,
@@ -57,9 +58,9 @@ const PlatformServices = [
 ];
 export function Services() {
   return (
-    <div className="flex flex-col max-w-3xl">
-      <h2>I offer a wide range of services, including but not limited to the following</h2>
-      <div className="inline-flex items-center mb-6 mt-4">
+    <div className="flex flex-col max-w-3xl m-auto py-6">
+      <h1 className="z-10 leading-12 tracking-normal text-justify">I offer a wide range of services, including but not limited to the following</h1>
+      <div className="inline-flex items-center mb-6 mt-4 z-10">
         <SquaresPlusIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
         <h3>Professional Services</h3>
@@ -69,7 +70,7 @@ export function Services() {
           <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}
       </div>
-      <div className="inline-flex items-center mb-6">
+      <div className="inline-flex items-center mb-6 z-10">
         <Square3Stack3DIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
         <h3>Platform Services</h3>
@@ -79,6 +80,7 @@ export function Services() {
           <SkillCard key={x.name} name={x.name} svg={x.svg} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
