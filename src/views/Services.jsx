@@ -58,8 +58,8 @@ const PlatformServices = [
 ];
 export function Services() {
   return (
-    <div className="flex flex-col max-w-3xl m-auto py-6">
-      <h1 className="z-10 leading-12 tracking-normal text-justify">I offer a wide range of services, including but not limited to the following</h1>
+    <div className="flex flex-col max-w-3xl m-auto p-6">
+      <h1 className="z-10 leading-12 tracking-normal text-4xl font-sans">I offer a wide range of services, including but not limited to the following</h1>
       <div className="inline-flex items-center mb-6 mt-4 z-10">
         <SquaresPlusIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;

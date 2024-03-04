@@ -5,7 +5,7 @@ export function Video() {
       autoPlay
       loop
       muted
-      src="/background-video.mp4"
+      src="/video/background-video.mp4"
     ></video>
   );
 }

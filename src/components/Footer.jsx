@@ -23,7 +23,7 @@ export function Footer() {
       <div className="px-6 py-8 mx-auto ">
         <div className="flex flex-col items-center text-center ">
           <div className="flex flex-wrap justify-center mt-6 -mx-4 ">
-            <div className="text-center max-w-screen-lg rounded-3xl card border border-spindle-400/20 drop-shadow-lg p-3 md:p-8 bg-spindle-400/50">
+            <div className="text-center max-w-screen-lg rounded-3xl card border border-bermuda-400/20 drop-shadow-lg p-3 md:p-8 bg-bermuda-600/80 backdrop-blur-sm backdrop-filter">
               <p className="text-2xl font-display tracking-normal text-spindle-50 text-shadow-md capitalize md:text-4xl md:mb-5">
                 Let’s get you started on something great
               </p>
