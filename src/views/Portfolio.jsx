@@ -20,7 +20,7 @@ export function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <div className="container px-6 lg:py-10 mx-auto">
-      <div className="max-w-[1400px] w-full m-auto py-6 lg:py-10 lg:px-4 relative group">
+      <div className="max-w-[1400px] w-full m-auto py-2 lg:py-10 lg:px-4 relative group">
         <PortfolioCard
           name={projects[currentIndex].name}
           detail={projects[currentIndex].detail}

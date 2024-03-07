@@ -3,7 +3,7 @@ export function PortfolioCard(props) {
   const { name, detail, images, url } = props;
   return (
     <div
-      className={`h-[1000px] flex items-end ${images} bg-cover bg-center bg-no-repeat rounded-3xl`}
+      className={`lg:h-[1000px] h-svh flex items-end ${images} lg:bg-cover bg-contain  bg-center bg-no-repeat rounded-3xl`}
     >
       <div className="flex flex-row justify-between align-items w-full px-8 py-4 backdrop-blur-sm bg-spindle-800/60 delay-200	rounded-3xl">
         <div>
@@ -19,7 +19,7 @@ export function PortfolioCard(props) {
             className="btn-primary w-auto h-fit mx-0 my-auto animate-none flex flex-row align-middle justify-between gap-2"
           >
             visit site
-            <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+            <ArrowTopRightOnSquareIcon className="lg:h-5 lg:w-5 h-8 w-8"/>
           </a>
         </div>
       </div>

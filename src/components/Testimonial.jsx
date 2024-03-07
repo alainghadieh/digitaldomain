@@ -1,7 +1,7 @@
 export function Testimonial(props) {
   const { reviewerName, jobTitle, avatar, alt, review } = props;
   return (
-    <div className='card duration-500 p-3 md:p-8 green-card' >
+    <div className='duration-500 p-3 md:p-8 green-card' >
       <p className="leading-loose md:leading-10 text-bermuda-950 text-xl md:text-2xl ">{review}</p>
       <div className="flex items-center mt-6">
         <img
