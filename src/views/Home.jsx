@@ -81,7 +81,7 @@ export function Home() {
           <ChevronDoubleDownIcon className="h2-icon" />
         </motion.a>
       </motion.section>
-      <section className="flex flex-col justify-end snap-center h-screen  max-w-screen-lg mx-auto px-5 relative">
+      <section className="flex flex-col justify-center snap-center h-screen  max-w-screen-lg mx-auto pt-48  px-5 relative">
         <a id="section2"> </a>
         <Testimonials />
         <motion.a

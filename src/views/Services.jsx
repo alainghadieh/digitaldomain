@@ -75,8 +75,9 @@ const PlatformServices = [
 ];
 export function Services() {
   return (
-    <motion.div variants={variants} className="flex flex-col max-w-3xl m-auto p-6">
+    <motion.div variants={variants} className="flex flex-col max-w-3xl m-auto p-6 lg:pt-20">
       <h1 className="z-10 leading-12 tracking-normal text-4xl font-sans">I offer a wide range of services, including but not limited to the following</h1>
+        <br />
       <div className="inline-flex items-center mb-6 z-10">
         <Square3Stack3DIcon className="h2-icon" aria-hidden="true" />
         &nbsp;&nbsp;&nbsp;
