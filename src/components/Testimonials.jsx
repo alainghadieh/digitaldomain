@@ -11,13 +11,13 @@ const testimonials = [
     alt: `Dr Alexandra's avatar`,
     review: `“Working with Alain was fantastic! His expertise and attention to detail resulted in a stunning skincare ecommerce site. Communication was seamless, and he kept me updated throughout. Highly recommend for anyone seeking top-notch web development!”`,
   },
-  {
-    reviewerName: "Nadine",
-    jobTitle: "Marketing Manager at Fab",
-    avatar: "./avatars/nadine_avatar.jpeg",
-    alt: `Nadine's avatar`,
-    review: `“Alain transformed our clothing store's online presence! His design skills captured our brand perfectly. Communication was excellent, and he delivered on time. Our website is now a seamless shopping experience thanks to his expertise!”`,
-  },
+  // {
+  //   reviewerName: "Nadine",
+  //   jobTitle: "Marketing Manager at Fab",
+  //   avatar: "./avatars/nadine_avatar.jpeg",
+  //   alt: `Nadine's avatar`,
+  //   review: `“Alain transformed our clothing store's online presence! His design skills captured our brand perfectly. Communication was excellent, and he delivered on time. Our website is now a seamless shopping experience thanks to his expertise!”`,
+  // },
 ];
 
 const variants = {
